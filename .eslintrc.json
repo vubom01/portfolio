@@ -1,20 +1,8 @@
 {
-  "extends": ["react-app", "plugin:prettier/recommended"],
-  "plugins": ["prettier"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended"
+  ],
   "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
-  "env": {
-    "es6": true,
-    "jest": true,
-    "browser": true,
-    "node": true
-  },
-  "rules": {
-    "prettier/prettier": "error",
-    "@typescript-eslint/no-unused-vars": "error",
-    "react-hooks/exhaustive-deps": "off"
-  }
+  "root": true
 }
