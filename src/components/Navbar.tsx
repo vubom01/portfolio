@@ -1,27 +1,30 @@
 'use client';
+import LocaleSwitcher from '@/components/LocaleSwitcher';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import MenuOverlay from './MenuOverlay';
 import NavLink from './NavLink';
 
-const navLinks = [
-  {
-    title: 'About',
-    path: '#about',
-  },
-  {
-    title: 'Projects',
-    path: '#projects',
-  },
-  {
-    title: 'Contact',
-    path: '#contact',
-  },
-];
-
 const Navbar = () => {
+  const t = useTranslations('Header');
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const navLinks = [
+    {
+      title: t('about'),
+      path: '#about',
+    },
+    {
+      title: t('projects'),
+      path: '#projects',
+    },
+    {
+      title: t('contact'),
+      path: '#contact',
+    },
+  ];
 
   return (
     <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
@@ -57,6 +60,9 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div>
+          <LocaleSwitcher />
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}

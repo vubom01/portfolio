@@ -1,0 +1,15 @@
+{
+  "HomePage": {
+    "title": "Tiếng Việt"
+  },
+  "LocaleSwitcher": {
+    "vi": "Tiếng Việt",
+    "en": "Tiếng Anh",
+    "label": "Ngon ngữ"
+  },
+  "Header": {
+    "about": "Về tôi",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "HomePage": {
+    "title": "English"
+  },
+  "LocaleSwitcher": {
+    "vi": "Vietnamese",
+    "en": "English",
+    "label": "Language"
+  },
+  "Header": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
