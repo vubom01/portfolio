@@ -1,20 +1,21 @@
+import clsx from 'clsx';
 import Link from 'next/link';
-import React from 'react';
 
-type NavLinkProps = {
-  href: string;
+import type { ReactNode } from 'react';
+
+export type NavLinkProps = {
   title: string;
+  href: string;
+  icon?: ReactNode;
 };
 
-const NavLink: React.FC<NavLinkProps> = ({ href, title }) => {
+function NavLink({ title, href, icon = null }: NavLinkProps) {
   return (
-    <Link
-      href={href}
-      className="block py-2 pl-3 pr-4 sm:text-xl rounded md:p-0"
-    >
+    <Link href={href} className={clsx('nav-link')}>
       {title}
+      {icon}
     </Link>
   );
-};
+}
 
 export default NavLink;
