@@ -4,5 +4,9 @@
     "eslint:recommended"
   ],
   "parser": "@typescript-eslint/parser",
-  "root": true
+  "root": true,
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off"
+  }
 }
