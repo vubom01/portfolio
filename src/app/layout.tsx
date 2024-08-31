@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'tethiendaivu',
-  icons: '/assets/images/logo .png',
+  icons: '/assets/favicon.png',
 };
 
 export default async function RootLayout({
