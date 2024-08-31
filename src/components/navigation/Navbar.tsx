@@ -1,9 +1,9 @@
 'use client';
-import { GitHubIcon, TwitterIcon } from '@/components/Icons';
-import LocaleSwitcher from '@/components/LocaleSwitcher';
+import { GitHubIcon, TwitterIcon } from '@/components/icons/Icons';
+import LocaleSwitcher from '@/components/locale/LocaleSwitcher';
 import NavIcon from '@/components/navigation/NavIcon';
-import NavLink from '@/components/NavLink';
-import ThemeToggle from '@/components/ThemeToggle';
+import NavLink from '@/components/navigation/NavLink';
+import ThemeToggle from '@/components/theme/ThemeToggle';
 import useOnScroll from '@/hooks/useOnScroll';
 import clsx from 'clsx';
 import { useTranslations } from 'next-intl';
@@ -34,13 +34,13 @@ const Navbar = () => {
           <nav className={clsx('flex', 'gap-2', 'px-2')}>
             <ul className={clsx('flex items-center', 'gap-5')}>
               <li>
-                <NavLink title={t('about')} href="/" />
+                <NavLink title={t('about')} href="/public" />
               </li>
               <li>
-                <NavLink title={t('projects')} href="/" />
+                <NavLink title={t('projects')} href="/public" />
               </li>
               <li>
-                <NavLink title={t('contact')} href="/" />
+                <NavLink title={t('contact')} href="/public" />
               </li>
             </ul>
           </nav>

@@ -12,6 +12,7 @@ const config: Config = {
       },
       colors: {
         bgPrimaryDark: '#10172a',
+        bgPrimaryLight: colors.white,
         divider: {
           light: colors.slate[200],
           dark: colors.slate[800],
@@ -20,7 +21,7 @@ const config: Config = {
     },
   },
   plugins: [],
-  darkMode: ['class'],
+  darkMode: 'class',
 };
 
 export default config;

@@ -1,5 +1,5 @@
+import NavLink from '@/components/navigation/NavLink';
 import React from 'react';
-import NavLink from './NavLink';
 
 type Link = {
   path: string;
