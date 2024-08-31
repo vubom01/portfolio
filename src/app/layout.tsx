@@ -6,13 +6,13 @@ import { getLocale, getMessages } from 'next-intl/server';
 import { ThemeProvider } from 'next-themes';
 import { Inter } from 'next/font/google';
 import React from 'react';
-import './globals.css';
+import '../styles/main.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'tethiendaivu',
-  icons: '/assets/images/hero-section.png',
+  icons: '/assets/images/logo .png',
 };
 
 export default async function RootLayout({
@@ -33,7 +33,7 @@ export default async function RootLayout({
         <ThemeProvider attribute="class">
           <NextIntlClientProvider messages={messages}>
             <Navbar />
-            {children}
+            <main>{children}</main>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
