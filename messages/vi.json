@@ -1,6 +1,7 @@
 {
   "HomePage": {
-    "title": "Tiếng Việt"
+    "getInTouch": "Liên hệ",
+    "resume": "RESUME"
   },
   "NotFoundPage": {
     "pageNotFound": "Không tìm thấy trang",

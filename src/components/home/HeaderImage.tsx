@@ -30,20 +30,24 @@ function HeaderImage() {
           >
             <HeaderImageAnimation
               onAnimationComplete={() => {
-                controlsHeaderOutline.start({
-                  opacity: 0,
-                  transition: {
-                    duration: 0.2,
-                    delay: 0.15,
-                  },
-                });
+                controlsHeaderOutline
+                  .start({
+                    opacity: 0,
+                    transition: {
+                      duration: 0.2,
+                      delay: 0.15,
+                    },
+                  })
+                  .then();
 
-                controlsHeaderImage.start({
-                  opacity: 1,
-                  transition: {
-                    duration: 0.15,
-                  },
-                });
+                controlsHeaderImage
+                  .start({
+                    opacity: 1,
+                    transition: {
+                      duration: 0.15,
+                    },
+                  })
+                  .then();
               }}
             />
           </motion.div>

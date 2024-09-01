@@ -1,6 +1,7 @@
 import { DocumentIcon } from '@/components/icons/Icons';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 const animation = {
@@ -15,6 +16,8 @@ const animation = {
 };
 
 function HeaderCta() {
+  const t = useTranslations('HomePage');
+
   return (
     <motion.div className={clsx('flex gap-2')} initial="hide" animate="show">
       <motion.div
@@ -29,7 +32,7 @@ function HeaderCta() {
             'md:button--big'
           )}
         >
-          Get in Touch
+          {t('getInTouch')}
         </Link>
       </motion.div>
       <motion.div variants={animation} transition={{ delay: 0.5 }}>
@@ -43,7 +46,7 @@ function HeaderCta() {
           )}
         >
           <DocumentIcon className={clsx('h-5 w-5')} />
-          RESUME
+          {t('resume')}
         </a>
       </motion.div>
     </motion.div>

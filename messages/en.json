@@ -1,6 +1,7 @@
 {
   "HomePage": {
-    "title": "English"
+    "getInTouch": "Get in Touch",
+    "resume": "RESUME"
   },
   "NotFoundPage": {
     "pageNotFound": "Page Not Found",

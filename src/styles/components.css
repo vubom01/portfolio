@@ -52,30 +52,30 @@
         @apply inline-flex h-10 items-center justify-center gap-1.5 rounded-md border border-transparent px-4 text-center text-sm font-bold transition duration-150;
         @apply md:rounded-xl;
 
-        & --solid {
+        &.button--solid {
             @apply bg-accent-600 text-white;
             @apply hover:bg-accent-700;
             @apply dark:bg-accent-600 dark:hover:bg-accent-500;
         }
 
-        & --ghost {
+        &.button--ghost {
             @apply text-slate-600;
             @apply hover:text-slate-700;
             @apply dark:text-slate-400 dark:hover:text-slate-300;
         }
 
-        & --outline {
+        &.button--outline {
             @apply border-divider-light;
             @apply dark:border-divider-dark;
             @apply hover:bg-slate-200/40 dark:hover:bg-slate-600/10;
         }
 
-        & --soft {
+        &.button--soft {
             @apply bg-accent-600/[0.08] text-accent-600 rounded-full px-5 font-bold;
             @apply dark:bg-accent-400/10 dark:text-accent-400 dark:font-semibold;
         }
 
-        & --big {
+        &.button--big {
             @apply h-12 rounded-xl px-6;
 
             &.button--underline {
@@ -85,7 +85,7 @@
             }
         }
 
-        & --underline {
+        &.button--underline {
             @apply relative;
 
             &::after {
@@ -105,7 +105,7 @@
             @apply dark:text-accent-300;
         }
 
-        & --label {
+        &.nav-link--label {
             @apply bg-accent-600/[0.08] rounded-full px-5;
             @apply dark:bg-accent-400/10;
 
@@ -114,12 +114,12 @@
             }
         }
 
-        & __separator {
+        &.nav-link__separator {
             @apply -mt-1 text-slate-800;
             @apply dark:text-slate-300;
         }
 
-        & --focus {
+        &.nav-link--focus {
             @apply rounded-lg bg-slate-100;
             @apply dark:bg-slate-800/50;
         }
@@ -129,7 +129,7 @@
         @apply relative overflow-hidden rounded-md bg-slate-100 px-3 py-1 pb-1.5 text-[13px] font-semibold;
         @apply dark:bg-slate-800;
 
-        & __indicator {
+        &.label__indicator {
             @apply absolute inset-x-0 bottom-0 h-0.5 rounded-full bg-accent-400;
             @apply dark:bg-accent-800;
         }
@@ -150,12 +150,12 @@
         @apply hover:text-accent-700 relative z-10 flex p-1 px-2 text-[13px] font-bold text-slate-700;
         @apply dark:hover:text-accent-300 dark:font-semibold dark:text-slate-300;
 
-        & --depth-2 {
+        &.toc-link--depth-2 {
             @apply ml-4 font-normal text-slate-600;
             @apply dark:font-normal dark:text-slate-400;
         }
 
-        & --active {
+        &.toc-link--active {
             @apply text-accent-600 hover:text-accent-700;
             @apply dark:text-accent-400 dark:hover:text-accent-300;
         }
@@ -184,12 +184,12 @@
         @apply flex h-8 items-center gap-2 whitespace-nowrap px-2 py-1 text-sm text-slate-900;
         @apply dark:text-slate-200;
 
-        & __label {
+        &.footer-link__label {
             @apply border-divider-light rounded-full border px-2 py-0 text-[10px] uppercase text-slate-900;
             @apply dark:text-slate-200;
         }
 
-        & --soon {
+        &.footer-link--soon {
             @apply cursor-not-allowed text-slate-600;
             @apply dark:text-slate-400;
         }
