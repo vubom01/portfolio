@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { useTheme } from 'next-themes';
 
 const ThemeToggle = () => {
@@ -11,14 +12,12 @@ const ThemeToggle = () => {
     <div onClick={toggleTheme}>
       <button
         type="button"
-        className="dark:hidden block font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+        className={clsx('block rounded-full hover:bg-gray-200', 'dark:hidden')}
       >
-        <span className="group inline-flex shrink-0 justify-center items-center size-9">
+        <span className="inline-flex justify-center items-center size-9">
           <svg
             className="shrink-0 size-4"
             xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -32,15 +31,15 @@ const ThemeToggle = () => {
       </button>
       <button
         type="button"
-        className="dark:block hidden font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-        data-hs-theme-click-value="light"
+        className={clsx(
+          'hidden rounded-full hover:bg-neutral-800',
+          'dark:block'
+        )}
       >
         <span className="group inline-flex shrink-0 justify-center items-center size-9">
           <svg
             className="shrink-0 size-4"
             xmlns="http://www.w3.org/2000/svg"
-            width="48"
-            height="48"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

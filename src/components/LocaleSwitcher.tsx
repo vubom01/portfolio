@@ -43,9 +43,9 @@ export default function LocaleSwitcher() {
   ];
 
   return (
-    <div className="relative inline-block">
-      <button onClick={() => setIsOpen(!isOpen)} className="flex py-2.5">
-        <FlagIcon code={getFlagCode(locale || 'en')} size={24} />
+    <div>
+      <button onClick={() => setIsOpen(!isOpen)} className={clsx('py-3')}>
+        <FlagIcon code={getFlagCode(locale || 'en')} />
       </button>
 
       {isOpen && (
@@ -59,7 +59,7 @@ export default function LocaleSwitcher() {
                 index === 0 ? 'hover:rounded-t-md' : 'hover:rounded-b-md'
               )}
             >
-              <FlagIcon code={getFlagCode(item.value)} size={24} />
+              <FlagIcon code={getFlagCode(item.value)} />
               <span>{item.label}</span>
             </button>
           ))}
