@@ -1,11 +1,11 @@
 import Navbar from '@/components/navigation/Navbar';
-import Provider from '@/components/providers';
+import Provider from '@/providers';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
 import { getLocale } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 import React from 'react';
-import '../styles/main.css';
+import '@/styles/main.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
