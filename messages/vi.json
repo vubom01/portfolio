@@ -2,10 +2,14 @@
   "HomePage": {
     "title": "Tiếng Việt"
   },
+  "NotFoundPage": {
+    "pageNotFound": "Không tìm thấy trang",
+    "backToHomepage": "quay lại trang chủ"
+  },
   "LocaleSwitcher": {
     "vi": "Tiếng Việt",
     "en": "Tiếng Anh",
-    "label": "Ngon ngữ"
+    "label": "Ngôn ngữ"
   },
   "Header": {
     "about": "Về tôi",

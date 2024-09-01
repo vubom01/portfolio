@@ -23,13 +23,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body
-        className={clsx(
-          inter.className,
-          'bg-bgPrimaryLight',
-          'dark:bg-bgPrimaryDark'
-        )}
-      >
+      <body className={clsx(inter.className)}>
         <ThemeProvider attribute="class">
           <NextIntlClientProvider messages={messages}>
             <Navbar />

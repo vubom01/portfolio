@@ -1,21 +1,11 @@
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
 
 const ThemeToggle = () => {
-  const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
 
   const toggleTheme = () => {
     setTheme(resolvedTheme === 'light' ? 'dark' : 'light');
   };
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
 
   return (
     <div onClick={toggleTheme}>

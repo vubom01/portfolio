@@ -2,6 +2,10 @@
   "HomePage": {
     "title": "English"
   },
+  "NotFoundPage": {
+    "pageNotFound": "Page Not Found",
+    "backToHomepage": "back to homepage"
+  },
   "LocaleSwitcher": {
     "vi": "Vietnamese",
     "en": "English",

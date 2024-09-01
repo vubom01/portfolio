@@ -1,4 +1,5 @@
 'use client';
+import HeaderCta from '@/components/home/HeaderCta';
 import HeaderImage from '@/components/home/HeaderImage';
 import HeaderTitle from '@/components/home/HeaderTitle';
 import clsx from 'clsx';
@@ -17,6 +18,9 @@ const HeroSection = () => {
         <div className={clsx('relative')}>
           <div className={clsx('relative z-10')}>
             <HeaderTitle />
+          </div>
+          <div className={clsx('mt-6 md:mt-8')}>
+            <HeaderCta />
           </div>
           <div
             className={clsx(
