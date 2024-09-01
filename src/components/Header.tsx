@@ -11,7 +11,7 @@ import React from 'react';
 
 const Navbar = () => {
   const t = useTranslations('Header');
-
+ 
   const isScrolled = useOnScroll(0);
 
   return (

@@ -1,4 +1,4 @@
-import Navbar from '@/components/navigation/Navbar';
+import Header from '@/components/Header';
 import Provider from '@/providers';
 import clsx from 'clsx';
 import type { Metadata } from 'next';
@@ -23,8 +23,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={clsx(inter.className)}>
         <Provider>
-          <Navbar />
+          <Header />
           <main>{children}</main>
+          {/*<Footer />*/}
         </Provider>
       </body>
     </html>
