@@ -30,15 +30,15 @@ const Navbar = () => {
           )}
         >
           <nav className={clsx('flex', 'gap-2', 'px-2')}>
-            <ul className={clsx('flex items-center', 'gap-5')}>
+            <ul className={clsx('flex items-center')}>
               <li>
-                <NavLink title={t('about')} href="/public" />
+                <NavLink title={t('projects')} href="/projects" />
               </li>
               <li>
-                <NavLink title={t('projects')} href="/public" />
+                <NavLink title={t('contact')} href="/contact" />
               </li>
               <li>
-                <NavLink title={t('contact')} href="/public" />
+                <NavLink title={t('studio')} href="/studio" />
               </li>
             </ul>
           </nav>

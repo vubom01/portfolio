@@ -13,8 +13,8 @@
     "label": "Ngôn ngữ"
   },
   "Header": {
-    "about": "Về tôi",
     "projects": "Dự án",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "studio": "Studio"
   }
 }

@@ -26,7 +26,7 @@ function HeaderCta() {
         transition={{ delay: 0.4 }}
       >
         <Link
-          href="/work/contact"
+          href="/contact"
           className={clsx(
             'button button--solid min-w-[128px]',
             'md:button--big'
@@ -39,7 +39,7 @@ function HeaderCta() {
         <a
           target="_blank"
           rel="noreferrer nofollow"
-          href="https://www.figma.com/community/file/1176377524040948926"
+          href="https://www.linkedin.com/in/vu-lh/"
           className={clsx(
             'button button--ghost px-2',
             'md:button--big md:px-2'
