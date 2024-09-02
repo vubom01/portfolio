@@ -1,7 +1,12 @@
 {
   "HomePage": {
     "getInTouch": "Liên hệ",
-    "resume": "RESUME"
+    "resume": "RESUME",
+    "hi": "chào",
+    "iAm": "Tôi là",
+    "a": "Một",
+    "softwareEngineer": "Lập trình viên",
+    "description": "người đang cố gắng bước ra khỏi vùng an toàn của bản thân."
   },
   "NotFoundPage": {
     "pageNotFound": "Không tìm thấy trang",

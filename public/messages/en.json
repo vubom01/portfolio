@@ -1,7 +1,12 @@
 {
   "HomePage": {
     "getInTouch": "Get in Touch",
-    "resume": "RESUME"
+    "resume": "RESUME",
+    "hi": "hi",
+    "iAm": "I'm",
+    "a": "A",
+    "softwareEngineer": "Software Engineer",
+    "description": "who is trying to step out of one's own comfort zone."
   },
   "NotFoundPage": {
     "pageNotFound": "Page Not Found",

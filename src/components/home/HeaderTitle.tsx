@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { motion, useAnimationControls } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 const animation = {
@@ -12,6 +13,7 @@ const animation = {
 
 function HeaderTitle() {
   const controls = useAnimationControls();
+  const t = useTranslations('HomePage');
 
   return (
     <div>
@@ -25,7 +27,7 @@ function HeaderTitle() {
         animate={animation.show}
         transition={{ delay: 0.1 }}
       >
-        hi!
+        {t('hi')}!
         <motion.div
           initial={{
             opacity: 0,
@@ -68,7 +70,7 @@ function HeaderTitle() {
           animate={animation.show}
           transition={{ delay: 0.2 }}
         >
-          I&apos;m{' '}
+          {t('iAm')}{' '}
           <strong className={clsx('text-accent-600', 'dark:text-accent-500')}>
             Vu
           </strong>{' '}
@@ -84,17 +86,16 @@ function HeaderTitle() {
           animate={animation.show}
           transition={{ delay: 0.3 }}
         >
-          <span className={clsx('lowercase')}>A</span>{' '}
+          <span className={clsx('lowercase')}>{t('a')}</span>{' '}
           <strong
             className={clsx(
               'font-bold lowercase text-slate-700',
               'dark:text-slate-300'
             )}
           >
-            Front-End Developer
+            {t('softwareEngineer')}
           </strong>{' '}
-          who loves intuitive,{' '}
-          <span className={clsx('block')}>clean and modern UI design.</span>
+          <span className={clsx('block')}>{t('description')}</span>
         </motion.h1>
       </span>
     </div>
