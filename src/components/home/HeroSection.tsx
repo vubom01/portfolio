@@ -2,6 +2,7 @@
 import HeaderCta from '@/components/home/HeaderCta';
 import HeaderImage from '@/components/home/HeaderImage';
 import HeaderTitle from '@/components/home/HeaderTitle';
+import Socials from '@/components/home/Socials';
 import clsx from 'clsx';
 
 const HeroSection = () => {
@@ -21,6 +22,9 @@ const HeroSection = () => {
           </div>
           <div className={clsx('mt-6 md:mt-8')}>
             <HeaderCta />
+          </div>
+          <div className={clsx('mt-6 md:mt-8')}>
+            <Socials />
           </div>
           <div
             className={clsx(

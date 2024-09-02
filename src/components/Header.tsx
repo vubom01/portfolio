@@ -1,10 +1,12 @@
 'use client';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
+import Logo from '@/components/Logo';
 import NavLink from '@/components/navigation/NavLink';
 import ThemeToggle from '@/components/ThemeToggle';
 import useOnScroll from '@/hooks/useOnScroll';
 import clsx from 'clsx';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
@@ -30,6 +32,13 @@ const Navbar = () => {
           )}
         >
           <nav className={clsx('flex', 'gap-2', 'px-2')}>
+            <Link
+              href="/"
+              className={clsx('flex h-9 items-center gap-2 rounded-xl px-2')}
+              aria-label="Home"
+            >
+              <Logo />
+            </Link>
             <ul className={clsx('flex items-center')}>
               <li>
                 <NavLink title={t('projects')} href="/projects" />
