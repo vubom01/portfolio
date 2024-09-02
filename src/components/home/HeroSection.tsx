@@ -1,9 +1,10 @@
 'use client';
 import HeaderCta from '@/components/home/HeaderCta';
-import HeaderImage from '@/components/home/HeaderImage';
 import HeaderTitle from '@/components/home/HeaderTitle';
 import Socials from '@/components/home/Socials';
 import clsx from 'clsx';
+import HeroImage from '@/components/home/HeroImage';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -11,28 +12,41 @@ const HeroSection = () => {
       id="page-header"
       className={clsx(
         'background-grid background-grid--fade-out pt-36 pb-20',
-        'lg:pb-28 lg:pt-52',
+        'lg:pb-28 lg:pt-52 lg:pr-10',
         'min-h-[100vh]'
       )}
     >
       <div className={clsx('content-wrapper')}>
         <div className={clsx('relative')}>
-          <div className={clsx('relative z-10')}>
-            <HeaderTitle />
+          <div className={clsx('block lg:hidden w-fit mb-10')}>
+            <Image
+              alt=""
+              src="/assets/images/hero-image.png"
+              width={325}
+              height={526}
+              className={clsx(' max-w-none', 'dark:brightness-[.82]')}
+              quality={100}
+              priority
+            />
           </div>
-          <div className={clsx('mt-6 md:mt-8')}>
-            <HeaderCta />
-          </div>
-          <div className={clsx('mt-6 md:mt-8')}>
-            <Socials />
+          <div className={clsx('order-2 xl:order-none')}>
+            <div className={clsx('relative z-10')}>
+              <HeaderTitle />
+            </div>
+            <div className={clsx('mt-6 md:mt-8')}>
+              <HeaderCta />
+            </div>
+            <div className={clsx('mt-6 md:mt-8')}>
+              <Socials />
+            </div>
           </div>
           <div
             className={clsx(
-              'pointer-events-none absolute -top-36 right-0 z-0 hidden select-none',
+              'pointer-events-none absolute -top-36 right-0 hidden   z-0 select-none',
               'lg:block'
             )}
           >
-            <HeaderImage />
+            <HeroImage />
           </div>
         </div>
       </div>
