@@ -6,19 +6,23 @@ import clsx from 'clsx';
 import HeroImage from '@/components/home/HeroImage';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import ParticlesContainer from '@/components/ParticlesContainer';
+import React from 'react';
 
 const HeroSection = () => {
   return (
     <header
       id="page-header"
       className={clsx(
-        'background-grid background-grid--fade-out pt-36 pb-20',
+        // 'background-grid background-grid--fade-out',
+        'pt-36 pb-20',
         'lg:pb-28 lg:pt-52 lg:pr-10',
         'min-h-[100vh]'
       )}
     >
       <div className={clsx('content-wrapper')}>
         <div className={clsx('relative')}>
+          <ParticlesContainer />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
