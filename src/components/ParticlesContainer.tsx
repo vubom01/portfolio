@@ -80,7 +80,7 @@ export default function ParticlesContainer() {
 
   return (
     <Particles
-      className="w-full h-full absolute z-0"
+      className="w-full h-full absolute z-[-2]"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}

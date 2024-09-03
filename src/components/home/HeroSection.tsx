@@ -55,7 +55,7 @@ const HeroSection = () => {
           </div>
           <div
             className={clsx(
-              'pointer-events-none absolute -top-36 right-0 hidden   z-0 select-none',
+              'pointer-events-none absolute -top-36 right-0 hidden z-0 select-none',
               'lg:block'
             )}
           >
