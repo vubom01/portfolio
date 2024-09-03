@@ -15,7 +15,7 @@ const animation = {
   },
 };
 
-function HeaderCta() {
+function HeroCta() {
   const t = useTranslations('HomePage');
 
   return (
@@ -53,4 +53,4 @@ function HeaderCta() {
   );
 }
 
-export default HeaderCta;
+export default HeroCta;

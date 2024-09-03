@@ -11,7 +11,7 @@ const animation = {
   },
 };
 
-function HeaderTitle() {
+function HeroTitle() {
   const controls = useAnimationControls();
   const t = useTranslations('HomePage');
 
@@ -102,4 +102,4 @@ function HeaderTitle() {
   );
 }
 
-export default HeaderTitle;
+export default HeroTitle;

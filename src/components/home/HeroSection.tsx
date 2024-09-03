@@ -1,6 +1,6 @@
 'use client';
-import HeaderCta from '@/components/home/HeaderCta';
-import HeaderTitle from '@/components/home/HeaderTitle';
+import HeaderCta from '@/components/home/HeroCta';
+import HeroTitle from '@/components/home/HeroTitle';
 import Socials from '@/components/home/Socials';
 import clsx from 'clsx';
 import HeroImage from '@/components/home/HeroImage';
@@ -40,7 +40,7 @@ const HeroSection = () => {
           </motion.div>
           <div className={clsx('order-2 xl:order-none')}>
             <div className={clsx('relative z-10')}>
-              <HeaderTitle />
+              <HeroTitle />
             </div>
             <div className={clsx('mt-6 md:mt-8')}>
               <HeaderCta />
