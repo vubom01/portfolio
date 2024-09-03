@@ -1,5 +1,4 @@
 'use client';
-import LocaleSwitcher from '@/components/LocaleSwitcher';
 import Logo from '@/components/Logo';
 import NavLink from '@/components/navigation/NavLink';
 import ThemeToggle from '@/components/ThemeToggle';
@@ -52,7 +51,7 @@ const Navbar = () => {
             </ul>
           </nav>
           <div className={clsx('flex items-center gap-x-4')}>
-            <LocaleSwitcher />
+            {/*<LocaleSwitcher />*/}
             <ThemeToggle />
           </div>
         </div>
