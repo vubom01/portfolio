@@ -10,7 +10,7 @@ const animation = {
   },
 };
 
-export default function Projects() {
+export default function Contact() {
   return (
     <header
       id="contact"
