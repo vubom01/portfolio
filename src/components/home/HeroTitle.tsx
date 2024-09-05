@@ -94,8 +94,8 @@ function HeroTitle() {
             )}
           >
             {t('softwareEngineer')}
-          </strong>{' '}
-          <span className={clsx('block')}>{t('description')}</span>
+          </strong>
+          {/*<span className={clsx('block')}>{t('description')}</span>*/}
         </motion.h1>
       </span>
     </div>
