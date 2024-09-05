@@ -72,9 +72,9 @@ function HeroTitle() {
         >
           {t('iAm')}{' '}
           <strong className={clsx('text-accent-600', 'dark:text-accent-500')}>
-            Vu
+            Tien
           </strong>{' '}
-          Le Huy,{' '}
+          Nghe,{' '}
         </motion.span>
         <motion.h1
           className={clsx(

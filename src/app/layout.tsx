@@ -10,7 +10,7 @@ import '@/styles/main.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'tethiendaivu',
+  title: 'tiennghe',
   icons: '/assets/favicon.png',
 };
 
