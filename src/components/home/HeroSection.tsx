@@ -6,7 +6,6 @@ import clsx from 'clsx';
 import HeroImage from '@/components/home/HeroImage';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import ParticlesContainer from '@/components/ParticlesContainer';
 import React from 'react';
 
 const HeroSection = () => {
@@ -22,7 +21,6 @@ const HeroSection = () => {
     >
       <div className={clsx('content-wrapper')}>
         <div className={clsx('relative')}>
-          <ParticlesContainer />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{
