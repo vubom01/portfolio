@@ -1,5 +1,5 @@
 'use client';
-import HeaderCta from '@/components/home/HeroCta';
+import HeroCta from '@/components/home/HeroCta';
 import HeroTitle from '@/components/home/HeroTitle';
 import Socials from '@/components/home/Socials';
 import clsx from 'clsx';
@@ -45,7 +45,7 @@ const HeroSection = () => {
               <HeroTitle />
             </div>
             <div className={clsx('mt-6 md:mt-8')}>
-              <HeaderCta />
+              <HeroCta />
             </div>
             <div className={clsx('mt-6 md:mt-8')}>
               <Socials />

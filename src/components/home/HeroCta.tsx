@@ -27,10 +27,7 @@ function HeroCta() {
       >
         <Link
           href="/contact"
-          className={clsx(
-            'button button--solid min-w-[128px]',
-            'md:button--big'
-          )}
+          className={clsx('button button--solid min-w-[128px]')}
         >
           {t('getInTouch')}
         </Link>
@@ -40,10 +37,7 @@ function HeroCta() {
           target="_blank"
           rel="noreferrer nofollow"
           href="https://www.linkedin.com/in/vu-lh/"
-          className={clsx(
-            'button button--ghost px-2',
-            'md:button--big md:px-2'
-          )}
+          className={clsx('button button--ghost px-2', 'md:px-2')}
         >
           <DocumentIcon className={clsx('h-5 w-5')} />
           {t('resume')}
