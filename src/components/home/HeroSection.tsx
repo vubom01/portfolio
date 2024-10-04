@@ -28,10 +28,10 @@ const HeroSection = () => {
               transition: { duration: 0.4, ease: 'easeIn' },
             }}
           >
-            <div className={clsx('block lg:hidden w-fit mb-10')}>
+            <div className={clsx('block lg:hidden w-fit mb-10 bottom-[20px]')}>
               <Image
                 alt=""
-                src="/assets/images/hero-image.png"
+                src="/assets/images/avatar.png"
                 width={325}
                 height={526}
                 className={clsx(' max-w-none', 'dark:brightness-[.82]')}
