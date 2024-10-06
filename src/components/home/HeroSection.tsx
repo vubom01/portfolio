@@ -14,7 +14,7 @@ const HeroSection = () => {
       id="page-header"
       className={clsx(
         'background-grid background-grid--fade-out',
-        'pt-36 pb-20',
+        'pt-28 pb-20',
         'lg:pb-28 lg:pt-52 lg:pr-10',
         'min-h-[100vh]'
       )}
@@ -28,7 +28,11 @@ const HeroSection = () => {
               transition: { duration: 0.4, ease: 'easeIn' },
             }}
           >
-            <div className={clsx('block lg:hidden w-fit mb-10 bottom-[20px]')}>
+            <div
+              className={clsx(
+                'block lg:hidden w-fit mb-10 bottom-[20px] ml-auto mr-auto'
+              )}
+            >
               <Image
                 alt=""
                 src="/assets/images/avatar.png"
