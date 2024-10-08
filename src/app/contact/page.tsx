@@ -95,7 +95,7 @@ export default function Contact() {
           </div>
           <div
             className={clsx(
-              'border-divider-light hidden border-l dark:border lg:block'
+              'border-divider-light hidden border-l dark:border-divider-dark lg:block'
             )}
           />
         </div>

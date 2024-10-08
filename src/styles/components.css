@@ -360,7 +360,7 @@
 
         &.heading-h2 {
             @apply mb-4 mt-6 scroll-mt-[86px] text-2xl;
-            @apply md:mb-5 md:mt-7 md:text-3xl lg:-ml-12;
+            @apply md:mb-5 md:mt-7 md:text-3xl;
 
             .mdx-heading__anchor {
                 @apply h-8 w-8 text-current;
