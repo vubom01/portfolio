@@ -17,7 +17,7 @@ export default function Studio() {
           <div className={clsx('-mt-48 hidden lg:block xl:w-[272px] w-64')} />
           <div className={clsx('page-contents')}>
             <h2 className={clsx('heading heading-h2')}>Computer</h2>
-            <div className={clsx('table-content')}>
+            <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
                   <tr>
@@ -57,7 +57,7 @@ export default function Studio() {
               I often play games with my friends, so a 24-inch monitor is ideal
               for my needs.
             </p>
-            <div className={clsx('table-content')}>
+            <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
                   <tr>
@@ -88,7 +88,7 @@ export default function Studio() {
             <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Keyboard</h2>
             <h2 className={clsx('heading heading-h3')}>Primary</h2>
-            <div className={clsx('table-content')}>
+            <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
                   <tr>
@@ -121,7 +121,7 @@ export default function Studio() {
               </table>
             </div>
             <h2 className={clsx('heading heading-h3')}>Secondary</h2>
-            <div className={clsx('table-content')}>
+            <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
                   <tr>
@@ -159,7 +159,7 @@ export default function Studio() {
             <p>VGN Dragonfly F1 MOBA - support 4KHz</p>
             <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Audio Devices</h2>
-            <div className={clsx('table-content')}>
+            <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
                   <tr>
@@ -189,7 +189,7 @@ export default function Studio() {
             </div>
             <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Others</h2>
-            <div className={clsx('table-content')}>
+            <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
                   <tr>

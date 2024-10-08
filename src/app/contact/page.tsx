@@ -17,7 +17,7 @@ export default function Contact() {
           <div className={clsx('-mt-48 hidden lg:block xl:w-[272px] w-64')} />
           <div className={clsx('page-contents')}>
             <h2 className={clsx('heading heading-h2')}>Contact</h2>
-            <div className={clsx('table-content')}>
+            <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
                   <tr>
@@ -49,7 +49,7 @@ export default function Contact() {
             </p>
             <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Social Media</h2>
-            <div className={clsx('table-content')}>
+            <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
                   <tr>

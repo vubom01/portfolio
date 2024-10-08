@@ -281,7 +281,7 @@
         }
     }
 
-    .table-content {
+    .data-table-contents {
         @apply border-divider-light mt-6 mb-8 w-full overflow-x-auto rounded-lg border text-sm;
         @apply dark:border-divider-dark;
 
