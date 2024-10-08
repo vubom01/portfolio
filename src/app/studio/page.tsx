@@ -36,7 +36,7 @@ export default function Studio() {
                   </tr>
                   <tr>
                     <td>RAM</td>
-                    <td>16GB 3200Mhz DDR4</td>
+                    <td>16GB 3200MHz DDR4</td>
                   </tr>
                   <tr>
                     <td>GPU</td>
