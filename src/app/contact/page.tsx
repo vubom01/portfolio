@@ -43,6 +43,11 @@ export default function Contact() {
                 </tbody>
               </table>
             </div>
+            <p>
+              If you need any further information, such as my phone number,
+              please do not hesitate to send me an email first.
+            </p>
+            <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Social Media</h2>
             <div className={clsx('table-content')}>
               <table>
