@@ -87,10 +87,10 @@ export default function Contact() {
                     <td>
                       <a
                         className={clsx('link')}
-                        href="https://www.instagram.com/tethiendaivu/"
+                        href="https://www.instagram.com/tethiendaivu"
                         target="_blank"
                       >
-                        https://www.instagram.com/tethiendaivu/
+                        https://www.instagram.com/tethiendaivu
                       </a>
                     </td>
                   </tr>
