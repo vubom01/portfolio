@@ -369,7 +369,7 @@
 
         &.heading-h3 {
             @apply mb-4 mt-5 scroll-mt-[86px] text-[1.2rem];
-            @apply md:mb-5 md:mt-6 md:text-[1.35rem] lg:-ml-11;
+            @apply md:mb-5 md:mt-6 md:text-[1.35rem];
 
             .mdx-heading__anchor {
                 @apply h-7 w-7;
