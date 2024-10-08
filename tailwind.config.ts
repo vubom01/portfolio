@@ -8,7 +8,7 @@ const {
 const svgToDataUri = require('mini-svg-data-uri');
 
 const config: Config = {
-  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,html}'],
   theme: {
     extend: {
       fontFamily: {
