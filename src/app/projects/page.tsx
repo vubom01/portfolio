@@ -15,7 +15,7 @@ export default function Projects() {
     <header
       id="projects"
       className={clsx(
-        'background-grid background-grid--fade-out pt-36 pb-20',
+        'background-grid fade-out pt-36 pb-20',
         'lg:pb-28 lg:pt-52 lg:pr-10',
         'min-h-[100vh]'
       )}

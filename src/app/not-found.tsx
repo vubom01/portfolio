@@ -10,7 +10,7 @@ function Error404() {
   return (
     <div
       className={clsx(
-        'background-grid flex h-full items-center justify-center',
+        'background-grid fade-out flex h-full items-center justify-center',
         'min-h-[100vh] pb-20'
       )}
     >

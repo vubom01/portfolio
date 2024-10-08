@@ -1,7 +1,7 @@
 'use client';
 import HeroCta from '@/components/home/HeroCta';
 import HeroTitle from '@/components/home/HeroTitle';
-import Socials from '@/components/home/Socials';
+import HeroSocials from '@/components/home/HeroSocials';
 import clsx from 'clsx';
 import HeroImage from '@/components/home/HeroImage';
 import Image from 'next/image';
@@ -13,7 +13,7 @@ const HeroSection = () => {
     <header
       id="page-header"
       className={clsx(
-        'background-grid background-grid--fade-out',
+        'background-grid fade-out',
         'pt-28 pb-20',
         'lg:pb-28 lg:pt-52 lg:pr-10',
         'min-h-[100vh]'
@@ -34,7 +34,7 @@ const HeroSection = () => {
               )}
             >
               <Image
-                alt=""
+                alt="tethiendaivu"
                 src="/assets/images/avatar.png"
                 width={325}
                 height={526}
@@ -52,7 +52,7 @@ const HeroSection = () => {
               <HeroCta />
             </div>
             <div className={clsx('mt-6 md:mt-8')}>
-              <Socials />
+              <HeroSocials />
             </div>
           </div>
           <div

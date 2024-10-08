@@ -26,7 +26,7 @@ function HeroImage() {
             }}
           >
             <Image
-              alt=""
+              alt="tethiendaivu"
               src="/assets/images/avatar.png"
               width={457}
               height={526}

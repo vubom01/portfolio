@@ -18,7 +18,7 @@ const animation = {
   },
 };
 
-export default function Socials() {
+export default function HeroSocials() {
   return (
     <motion.div
       variants={animation}
