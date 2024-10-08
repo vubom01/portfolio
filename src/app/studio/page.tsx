@@ -49,17 +49,45 @@ export default function Studio() {
                 </tbody>
               </table>
             </div>
-            <h2 className={clsx('heading heading-h3')}>Second Device</h2>
+            <h2 className={clsx('heading heading-h3')}>Support Device</h2>
             <p>Apple MacBook Air M2 2022 16GB 256GB</p>
             <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Display</h2>
-            <p>Asus TUF GAMING VG249Q3A</p>
             <p>
               I often play games with my friends, so a 24-inch monitor is ideal
               for my needs.
             </p>
+            <div className={clsx('table-content')}>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Model</td>
+                    <td>Asus TUF GAMING VG249Q3A</td>
+                  </tr>
+                  <tr>
+                    <td>Resolution</td>
+                    <td>FHD 1920x1080</td>
+                  </tr>
+                  <tr>
+                    <td>Aspect ratio</td>
+                    <td>16:9</td>
+                  </tr>
+                  <tr>
+                    <td>Refresh rate</td>
+                    <td>180 Hz</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Keyboard</h2>
+            <h2 className={clsx('heading heading-h3')}>Primary</h2>
             <div className={clsx('table-content')}>
               <table>
                 <thead>
@@ -92,7 +120,7 @@ export default function Studio() {
                 </tbody>
               </table>
             </div>
-            <h2 className={clsx('heading heading-h3')}>Second keyboard</h2>
+            <h2 className={clsx('heading heading-h3')}>Secondary</h2>
             <div className={clsx('table-content')}>
               <table>
                 <thead>
@@ -121,6 +149,66 @@ export default function Studio() {
                   <tr>
                     <td>Keycap</td>
                     <td>EPBT Miami</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr className={clsx('divider')} />
+            <h2 className={clsx('heading heading-h2')}>Mouse</h2>
+            <p>Attack Shark R2 - support 8KHz</p>
+            <p>VGN Dragonfly F1 MOBA - support 4KHz</p>
+            <hr className={clsx('divider')} />
+            <h2 className={clsx('heading heading-h2')}>Audio Devices</h2>
+            <div className={clsx('table-content')}>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Speaker</td>
+                    <td>Divoom DiToo Pro</td>
+                  </tr>
+                  <tr>
+                    <td>Speaker</td>
+                    <td>Marshall Emberton 2</td>
+                  </tr>
+                  <tr>
+                    <td>Earbuds</td>
+                    <td>EarPods 3.5mm</td>
+                  </tr>
+                  <tr>
+                    <td>Earbuds</td>
+                    <td>Sony WF-1000XM5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr className={clsx('divider')} />
+            <h2 className={clsx('heading heading-h2')}>Others</h2>
+            <div className={clsx('table-content')}>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Music player</td>
+                    <td>Apple iPod Shuffle Gen 4</td>
+                  </tr>
+                  <tr>
+                    <td>Mouse pad</td>
+                    <td>X-raypad Aqua Control 2</td>
+                  </tr>
+                  <tr>
+                    <td>Keyboard pad</td>
+                    <td>NRKB Mictlan</td>
                   </tr>
                 </tbody>
               </table>
