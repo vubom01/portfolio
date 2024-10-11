@@ -184,6 +184,10 @@ export default function Studio() {
                     <td>Earbuds</td>
                     <td>Sony WF-1000XM5</td>
                   </tr>
+                  <tr>
+                    <td>Headphones</td>
+                    <td>Sony WH-1000XM5</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
