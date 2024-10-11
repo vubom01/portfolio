@@ -155,7 +155,7 @@ export default function Studio() {
             </div>
             <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Mouse</h2>
-            <p>Attack Shark R2 - support 8KHz</p>
+            <p>VGN ATK F1 Ultimate - support 8KHz</p>
             <p>VGN Dragonfly F1 MOBA - support 4KHz</p>
             <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Audio Devices</h2>
