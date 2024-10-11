@@ -12,6 +12,7 @@ export default function Contact() {
         className={clsx(
           'content-wrapper flex-shrink-0 overflow-hidden lg:overflow-visible'
         )}
+        data-accent="blue"
       >
         <div className={clsx('flex flex-row-reverse gap-8 xl:gap-24')}>
           <div className={clsx('-mt-48 hidden lg:block xl:w-[272px] w-64')} />
