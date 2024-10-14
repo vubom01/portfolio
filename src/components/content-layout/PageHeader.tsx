@@ -20,7 +20,7 @@ export default function PageHeader({ title, description }: PageHeaderProps) {
       id={title}
       className={clsx(
         'pt-36 pb-20',
-        'lg:pb-28 lg:pt-48 lg:pr-10',
+        'lg:pb-28 lg:pt-48',
         'background-grid fade-out'
       )}
     >

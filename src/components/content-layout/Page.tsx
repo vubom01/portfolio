@@ -16,7 +16,7 @@ function Page({
   return (
     <>
       <PageHeader title={title} description={description} />
-      <div className={clsx('scroll-mt-[86px] lg:pr-10')} id="main-contents">
+      <div className={clsx('scroll-mt-[86px]')} id="main-contents">
         {children}
       </div>
     </>
