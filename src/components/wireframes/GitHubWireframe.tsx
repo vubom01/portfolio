@@ -149,6 +149,10 @@ function GitHubWireframe({
           </div>
         </div>
       </div>
+      <div className={clsx('mt-4 flex flex-col gap-2')}>
+        <SkeletonSm w={320} />
+        <SkeletonSm w={200} />
+      </div>
     </div>
   );
 }
