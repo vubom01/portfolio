@@ -34,12 +34,14 @@ function BrowserTab({ icon, title, isActive }: BrowserTabProps) {
 interface AppWindowProps {
   type?: 'browser' | 'app';
   browserTabs?: Array<BrowserTabProps>;
+  webUrl?: string;
 }
 
 function AppWindow({
   children = null,
   type = 'app',
   browserTabs = [],
+  webUrl,
 }: PropsWithChildren<AppWindowProps>) {
   const isWithBrowserTabs = type === 'browser' && browserTabs;
 
@@ -47,7 +49,7 @@ function AppWindow({
     <div
       role="presentation"
       className={clsx(
-        'border-divider-light pointer-events-none flex h-full w-full select-none flex-col overflow-hidden rounded-xl border bg-white',
+        'border-divider-light flex h-full w-full select-none flex-col overflow-hidden rounded-xl border bg-white',
         'dark:border-divider-dark dark:bg-[#0c1222]'
       )}
     >
@@ -85,7 +87,11 @@ function AppWindow({
         {type === 'browser' && (
           <>
             <div className={clsx('flex h-10 items-center justify-center')}>
-              <SkeletonMd w={160} />
+              <SkeletonMd w={180}>
+                <a href={webUrl} target="_blank">
+                  {webUrl}
+                </a>
+              </SkeletonMd>
             </div>
             {isWithBrowserTabs && (
               <div className={clsx('mt-2 flex gap-2 px-3')}>
@@ -102,7 +108,7 @@ function AppWindow({
           </>
         )}
       </div>
-      <div className={clsx('flex-1 overflow-hidden')}>{children}</div>
+      <div>{children}</div>
     </div>
   );
 }

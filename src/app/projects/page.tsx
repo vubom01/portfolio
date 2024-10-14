@@ -3,6 +3,8 @@ import Page from '@/components/content-layout/Page';
 import clsx from 'clsx';
 import AppWindow from '@/components/wireframes/AppWindow';
 import { GitHubIcon } from '@/components/icons/Icons';
+import Image from 'next/image';
+import MemoGoWireframe from '@/components/wireframes/MemoGoWireframe';
 
 export default function Projects() {
   return (
@@ -16,29 +18,43 @@ export default function Projects() {
           <div className={clsx('-mt-48 hidden lg:block xl:w-[272px] w-64')} />
           <div className={clsx('page-contents')}>
             <h2 className={clsx('heading heading-h2')}>MemoGo</h2>
-            <AppWindow
-              type="browser"
-              browserTabs={[
-                {
-                  icon: <GitHubIcon className="h-4 w-4" />,
-                  title:
-                    'MemoGo - Plan Your Trip Itinerary & Split Expense Together',
-                  isActive: true,
-                },
-              ]}
-            ></AppWindow>
+            <div>
+              <AppWindow
+                type="browser"
+                browserTabs={[
+                  {
+                    icon: (
+                      <Image
+                        alt="memogo logo"
+                        src="/assets/images/memogoLogo.png"
+                        width={16}
+                        height={16}
+                      />
+                    ),
+                    title:
+                      'MemoGo - Plan Your Trip Itinerary & Split Expense Together',
+                    isActive: true,
+                  },
+                ]}
+                webUrl="https://memogo.com"
+              >
+                <MemoGoWireframe />
+              </AppWindow>
+            </div>
             <hr className={clsx('divider')} />
             <h2 className={clsx('heading heading-h2')}>Personal blog</h2>
-            <AppWindow
-              type="browser"
-              browserTabs={[
-                {
-                  icon: <GitHubIcon className="h-4 w-4" />,
-                  title: 'tethiendaivu',
-                  isActive: true,
-                },
-              ]}
-            ></AppWindow>
+            <div className={clsx('mb-8')}>
+              <AppWindow
+                type="browser"
+                browserTabs={[
+                  {
+                    icon: <GitHubIcon className="h-4 w-4" />,
+                    title: 'tethiendaivu',
+                    isActive: true,
+                  },
+                ]}
+              ></AppWindow>
+            </div>
           </div>
           <div
             className={clsx(

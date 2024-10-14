@@ -10,9 +10,9 @@ interface SkeletonProps {
 }
 
 export function SkeletonSm({
-                             w = 16,
-                             children = null,
-                           }: PropsWithChildren<SkeletonProps>) {
+  w = 16,
+  children = null,
+}: PropsWithChildren<SkeletonProps>) {
   return (
     <div
       className={clsx(
@@ -27,14 +27,15 @@ export function SkeletonSm({
 }
 
 export function SkeletonMd({
-                             w = 24,
-                             children = null,
-                           }: PropsWithChildren<SkeletonProps>) {
+  w = 24,
+  children = null,
+}: PropsWithChildren<SkeletonProps>) {
   return (
     <div
       className={clsx(
         'flex h-6 items-center rounded-lg bg-slate-200/80',
-        'dark:bg-slate-100/5'
+        'dark:bg-slate-100/5',
+        'justify-center'
       )}
       style={{ width: w }}
     >
