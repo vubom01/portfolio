@@ -6,8 +6,22 @@ import {
   LINKEDIN_LINK,
   TWITTER_LINK,
 } from '@/constants/socials';
+import TableOfContents from '@/components/TableOfContents';
 
 export default function Contact() {
+  const tableOfContents: { title: string; depth: number; slug: string }[] = [
+    {
+      title: 'Contact',
+      depth: 1,
+      slug: 'contact',
+    },
+    {
+      title: 'Social Media',
+      depth: 1,
+      slug: 'social-media',
+    },
+  ];
+
   return (
     <Page
       title="Contact"
@@ -20,9 +34,25 @@ export default function Contact() {
         data-accent="blue"
       >
         <div className={clsx('flex flex-row-reverse gap-8 xl:gap-24')}>
-          <div className={clsx('-mt-48 hidden lg:block xl:w-[272px] w-64')} />
+          <div className={clsx('-mt-48 hidden', 'lg:block')}>
+            <div
+              className={clsx(
+                'sticky top-24 z-[901] w-64',
+                'xl:w-[272px]',
+                'fm:relative fm:top-0'
+              )}
+            >
+              <TableOfContents items={tableOfContents} />
+            </div>
+          </div>
           <div className={clsx('page-contents')}>
-            <h2 className={clsx('heading heading-h2')}>Contact</h2>
+            <h2
+              id="contact"
+              data-ss="contact"
+              className={clsx('heading heading-h2')}
+            >
+              <span>Contact</span>
+            </h2>
             <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
@@ -54,7 +84,13 @@ export default function Contact() {
               please do not hesitate to send me an email first.
             </p>
             <hr className={clsx('divider')} />
-            <h2 className={clsx('heading heading-h2')}>Social Media</h2>
+            <h2
+              id="social-media"
+              data-ss="social-media"
+              className={clsx('heading heading-h2')}
+            >
+              <span>Social Media</span>
+            </h2>
             <div className={clsx('data-table-contents')}>
               <table>
                 <thead>
