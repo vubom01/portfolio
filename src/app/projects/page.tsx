@@ -2,9 +2,10 @@
 import Page from '@/components/content-layout/Page';
 import clsx from 'clsx';
 import AppWindow from '@/components/wireframes/AppWindow';
-import { GitHubIcon } from '@/components/icons/Icons';
 import Image from 'next/image';
 import MemoGoWireframe from '@/components/wireframes/MemoGoWireframe';
+import GitHubWireframe from '@/components/wireframes/GitHubWireframe';
+import { GitHubIcon } from '@/components/icons/Icons';
 
 export default function Projects() {
   return (
@@ -34,26 +35,33 @@ export default function Projects() {
                     title:
                       'MemoGo - Plan Your Trip Itinerary & Split Expense Together',
                     isActive: true,
+                    url: 'https://memogo.com',
                   },
                 ]}
-                webUrl="https://memogo.com"
               >
                 <MemoGoWireframe />
               </AppWindow>
             </div>
             <hr className={clsx('divider')} />
-            <h2 className={clsx('heading heading-h2')}>Personal blog</h2>
+            <h2 className={clsx('heading heading-h2')}>Portfolio</h2>
             <div className={clsx('mb-8')}>
               <AppWindow
                 type="browser"
                 browserTabs={[
                   {
                     icon: <GitHubIcon className="h-4 w-4" />,
-                    title: 'tethiendaivu',
+                    title: 'vubom01/portfolio',
                     isActive: true,
+                    url: 'https://github.com/vubom01/portfolio',
                   },
                 ]}
-              ></AppWindow>
+              >
+                <GitHubWireframe
+                  author="vubom01"
+                  repository="portfolio"
+                  description="This portfolio design is inspired by various online sources. The source code is free to use and is not intended for commercial purposes."
+                />
+              </AppWindow>
             </div>
           </div>
           <div

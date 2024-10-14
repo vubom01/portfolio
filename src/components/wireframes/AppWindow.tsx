@@ -1,47 +1,46 @@
 import clsx from 'clsx';
 
-import { SkeletonMd } from '@/components/wireframes/Skeletons';
-
 import type { PropsWithChildren, ReactNode } from 'react';
 
 interface BrowserTabProps {
   icon: ReactNode;
   title: string;
   isActive: boolean;
+  url: string;
 }
 
-function BrowserTab({ icon, title, isActive }: BrowserTabProps) {
+function BrowserTab({ icon, title, isActive, url }: BrowserTabProps) {
   return (
-    <div
-      className={clsx('flex h-6 items-center truncate rounded-lg', [
-        isActive
-          ? [
-              'bg-slate-200 text-slate-600',
-              'dark:bg-slate-100/20 dark:text-slate-300',
-            ]
-          : ['bg-slate-200/50 text-slate-500', 'dark:bg-slate-100/5'],
-      ])}
-      style={{ width: 200 }}
-    >
-      <div className={clsx('flex w-full gap-2 px-2 text-xs')}>
-        {icon}
-        <div className={clsx('flex-1 truncate')}>{title}</div>
+    <a href={url} target="_blank">
+      <div
+        className={clsx('flex h-6 items-center truncate rounded-lg', [
+          isActive
+            ? [
+                'bg-slate-200 text-slate-600',
+                'dark:bg-slate-100/20 dark:text-slate-300',
+              ]
+            : ['bg-slate-200/50 text-slate-500', 'dark:bg-slate-100/5'],
+        ])}
+        style={{ width: 200 }}
+      >
+        <div className={clsx('flex w-full gap-2 px-2 text-xs')}>
+          {icon}
+          <div className={clsx('flex-1 truncate')}>{title}</div>
+        </div>
       </div>
-    </div>
+    </a>
   );
 }
 
 interface AppWindowProps {
   type?: 'browser' | 'app';
   browserTabs?: Array<BrowserTabProps>;
-  webUrl?: string;
 }
 
 function AppWindow({
   children = null,
   type = 'app',
   browserTabs = [],
-  webUrl,
 }: PropsWithChildren<AppWindowProps>) {
   const isWithBrowserTabs = type === 'browser' && browserTabs;
 
@@ -56,8 +55,7 @@ function AppWindow({
       <div
         className={clsx(
           'border-divider-light relative box-border border-b',
-          'dark:border-divider-dark',
-          [isWithBrowserTabs ? 'h-20' : 'h-10']
+          'dark:border-divider-dark'
         )}
       >
         <div
@@ -86,25 +84,21 @@ function AppWindow({
         </div>
         {type === 'browser' && (
           <>
-            <div className={clsx('flex h-10 items-center justify-center')}>
-              <SkeletonMd w={180}>
-                <a href={webUrl} target="_blank">
-                  {webUrl}
-                </a>
-              </SkeletonMd>
+            <div className={clsx('flex h-10 items-center pl-16')}>
+              {isWithBrowserTabs && (
+                <div className={clsx('flex gap-2 px-3')}>
+                  {browserTabs.map(({ icon, title, isActive, url }) => (
+                    <BrowserTab
+                      key={title}
+                      icon={icon}
+                      title={title}
+                      isActive={isActive}
+                      url={url}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
-            {isWithBrowserTabs && (
-              <div className={clsx('mt-2 flex gap-2 px-3')}>
-                {browserTabs.map(({ icon, title, isActive }) => (
-                  <BrowserTab
-                    key={title}
-                    icon={icon}
-                    title={title}
-                    isActive={isActive}
-                  />
-                ))}
-              </div>
-            )}
           </>
         )}
       </div>
