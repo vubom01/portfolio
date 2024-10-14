@@ -1,9 +1,9 @@
 'use client';
-import HeroCta from '@/components/home/HeroCta';
-import HeroTitle from '@/components/home/HeroTitle';
-import HeroSocials from '@/components/home/HeroSocials';
+import HeroCta from '@/components/hero-section/HeroCta';
+import HeroTitle from '@/components/hero-section/HeroTitle';
+import HeroSocials from '@/components/hero-section/HeroSocials';
 import clsx from 'clsx';
-import HeroImage from '@/components/home/HeroImage';
+import HeroImage from '@/components/hero-section/HeroImage';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import React from 'react';

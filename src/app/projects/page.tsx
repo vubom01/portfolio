@@ -6,6 +6,7 @@ import Image from 'next/image';
 import MemoGoWireframe from '@/components/wireframes/MemoGoWireframe';
 import GitHubWireframe from '@/components/wireframes/GitHubWireframe';
 import { GitHubIcon } from '@/components/icons/Icons';
+import { GITHUB_REPO_LINK, MEMOGO_LINK } from '@/constants/socials';
 
 export default function Projects() {
   return (
@@ -27,7 +28,7 @@ export default function Projects() {
                     icon: (
                       <Image
                         alt="memogo logo"
-                        src="/assets/images/memogoLogo.png"
+                        src="/assets/images/memogo-favicon.png"
                         width={16}
                         height={16}
                       />
@@ -35,7 +36,7 @@ export default function Projects() {
                     title:
                       'MemoGo - Plan Your Trip Itinerary & Split Expense Together',
                     isActive: true,
-                    url: 'https://memogo.com',
+                    url: MEMOGO_LINK,
                   },
                 ]}
               >
@@ -52,7 +53,7 @@ export default function Projects() {
                     icon: <GitHubIcon className="h-4 w-4" />,
                     title: 'vubom01/portfolio',
                     isActive: true,
-                    url: 'https://github.com/vubom01/portfolio',
+                    url: GITHUB_REPO_LINK,
                   },
                 ]}
               >

@@ -8,6 +8,13 @@ import {
   TwitterIcon,
 } from '@/components/icons/Icons';
 import Link from 'next/link';
+import {
+  GITHUB_LINK,
+  GITHUB_REPO_LINK,
+  INSTAGRAM_LINK,
+  LINKEDIN_LINK,
+  TWITTER_LINK,
+} from '@/constants/socials';
 
 function FooterDescription() {
   return (
@@ -26,7 +33,7 @@ function FooterDescription() {
       <ul className={clsx('-ml-2 flex')}>
         <li>
           <a
-            href="https://www.linkedin.com/in/vu-lh/"
+            href={LINKEDIN_LINK}
             title="LinkedIn Icon"
             target="_blank"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -36,7 +43,7 @@ function FooterDescription() {
         </li>
         <li>
           <a
-            href="https://github.com/vubom01"
+            href={GITHUB_LINK}
             title="Github Icon"
             target="_blank"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -46,7 +53,7 @@ function FooterDescription() {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/tethiendaivu/"
+            href={INSTAGRAM_LINK}
             title="Instagram Icon"
             target="_blank"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -56,7 +63,7 @@ function FooterDescription() {
         </li>
         <li>
           <a
-            href="https://x.com/vu_le_huy"
+            href={TWITTER_LINK}
             title="Twitter Icon"
             target="_blank"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -72,7 +79,7 @@ function FooterDescription() {
 function LastUpdate() {
   return (
     <a
-      href="https://github.com/vubom01/portfolio"
+      href={GITHUB_REPO_LINK}
       target="_blank"
       rel="noreferrer nofollow"
       className={clsx('hover:underline')}

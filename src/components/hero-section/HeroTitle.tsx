@@ -49,12 +49,14 @@ function HeroTitle() {
             src="/assets/emojis/love-you-gesture.png"
             width={48}
             height={48}
-            onLoadingComplete={() => {
-              controls.start({
-                opacity: 1,
-                y: 0,
-                rotate: 0,
-              });
+            onLoad={() => {
+              controls
+                .start({
+                  opacity: 1,
+                  y: 0,
+                  rotate: 0,
+                })
+                .then();
             }}
             priority
           />

@@ -30,7 +30,7 @@ function MemoGoWireframe() {
         <div className={clsx('hidden lg:block')}>
           <Image
             alt="memogo bg"
-            src="/assets/projects/memogoBg.png"
+            src="/assets/images/memogo-home-background.png"
             width={200}
             height={200}
           />

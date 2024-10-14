@@ -1,6 +1,11 @@
 'use client';
 import Page from '@/components/content-layout/Page';
 import clsx from 'clsx';
+import {
+  INSTAGRAM_LINK,
+  LINKEDIN_LINK,
+  TWITTER_LINK,
+} from '@/constants/socials';
 
 export default function Contact() {
   return (
@@ -64,10 +69,10 @@ export default function Contact() {
                     <td>
                       <a
                         className={clsx('link')}
-                        href="https://www.linkedin.com/in/vu-lh"
+                        href={LINKEDIN_LINK}
                         target="_blank"
                       >
-                        https://www.linkedin.com/in/vu-lh
+                        {LINKEDIN_LINK}
                       </a>
                     </td>
                   </tr>
@@ -76,10 +81,10 @@ export default function Contact() {
                     <td>
                       <a
                         className={clsx('link')}
-                        href="https://x.com/vu_le_huy"
+                        href={TWITTER_LINK}
                         target="_blank"
                       >
-                        https://x.com/vu_le_huy
+                        {TWITTER_LINK}
                       </a>
                     </td>
                   </tr>
@@ -88,10 +93,10 @@ export default function Contact() {
                     <td>
                       <a
                         className={clsx('link')}
-                        href="https://www.instagram.com/tethiendaivu"
+                        href={INSTAGRAM_LINK}
                         target="_blank"
                       >
-                        https://www.instagram.com/tethiendaivu
+                        {INSTAGRAM_LINK}
                       </a>
                     </td>
                   </tr>

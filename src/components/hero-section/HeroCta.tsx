@@ -36,7 +36,6 @@ function HeroCta() {
         <a
           target="_blank"
           rel="noreferrer nofollow"
-          href="https://www.linkedin.com/in/vu-lh/"
           className={clsx('button button--ghost px-2', 'md:px-2')}
         >
           <DocumentIcon className={clsx('h-5 w-5')} />
