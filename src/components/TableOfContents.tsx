@@ -67,7 +67,6 @@ function TableOfContents({ items = [] }: TableOfContentsProps) {
           animate={isScrolled ? { x: 0, opacity: 1 } : { x: 16, opacity: 0 }}
         >
           <a
-            href="#skip-navigation"
             className={clsx(
               'border-divider-light text-accent-700 flex h-6 cursor-pointer items-center rounded-full border px-2 text-xs font-normal',
               'dark:border-divider-dark dark:text-accent-400'
