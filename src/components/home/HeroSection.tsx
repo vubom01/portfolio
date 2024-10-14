@@ -15,8 +15,7 @@ const HeroSection = () => {
       className={clsx(
         'background-grid fade-out',
         'pt-28 pb-20',
-        'lg:pb-28 lg:pt-52 lg:pr-10',
-        'min-h-[100vh]'
+        'lg:pb-28 lg:pt-52 lg:pr-10'
       )}
     >
       <div className={clsx('content-wrapper')}>

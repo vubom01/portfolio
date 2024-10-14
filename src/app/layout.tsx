@@ -6,6 +6,7 @@ import { getLocale } from 'next-intl/server';
 import { Inter } from 'next/font/google';
 import React from 'react';
 import '@/styles/main.css';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,7 +26,7 @@ export default async function RootLayout({
         <Provider>
           <Header />
           <main>{children}</main>
-          {/*<Footer />*/}
+          <Footer />
         </Provider>
       </body>
     </html>
