@@ -7,9 +7,10 @@ import {
   TWITTER_LINK,
 } from '@/constants/socials';
 import TableOfContents from '@/components/TableOfContents';
+import { ITableOfContentsItem } from '@/interfaces/common';
 
 export default function Contact() {
-  const tableOfContents: { title: string; depth: number; slug: string }[] = [
+  const tableOfContents: ITableOfContentsItem[] = [
     {
       title: 'Contact',
       depth: 1,
@@ -51,7 +52,7 @@ export default function Contact() {
               data-ss="contact"
               className={clsx('heading heading-h2')}
             >
-              <span>Contact</span>
+              Contact
             </h2>
             <div className={clsx('data-table-contents')}>
               <table>
@@ -89,7 +90,7 @@ export default function Contact() {
               data-ss="social-media"
               className={clsx('heading heading-h2')}
             >
-              <span>Social Media</span>
+              Social Media
             </h2>
             <div className={clsx('data-table-contents')}>
               <table>

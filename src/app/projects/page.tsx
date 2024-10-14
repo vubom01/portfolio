@@ -7,19 +7,51 @@ import MemoGoWireframe from '@/components/wireframes/MemoGoWireframe';
 import GitHubWireframe from '@/components/wireframes/GitHubWireframe';
 import { GitHubIcon } from '@/components/icons/Icons';
 import { GITHUB_REPO_LINK, MEMOGO_LINK } from '@/constants/socials';
+import { ITableOfContentsItem } from '@/interfaces/common';
+import TableOfContents from '@/components/TableOfContents';
 
 export default function Projects() {
+  const tableOfContents: ITableOfContentsItem[] = [
+    {
+      title: 'MemoGo',
+      depth: 1,
+      slug: 'memogo',
+    },
+    {
+      title: 'Portfolio',
+      depth: 1,
+      slug: 'portfolio',
+    },
+  ];
+
   return (
     <Page title="Projects" description="Showcase of my related work.">
       <div
         className={clsx(
           'content-wrapper flex-shrink-0 overflow-hidden lg:overflow-visible'
         )}
+        data-accent="blue"
       >
         <div className={clsx('flex flex-row-reverse gap-8 xl:gap-24')}>
-          <div className={clsx('-mt-48 hidden lg:block xl:w-[272px] w-64')} />
+          <div className={clsx('-mt-48 hidden', 'lg:block')}>
+            <div
+              className={clsx(
+                'sticky top-24 z-[901] w-64',
+                'xl:w-[272px]',
+                'fm:relative fm:top-0'
+              )}
+            >
+              <TableOfContents items={tableOfContents} />
+            </div>
+          </div>
           <div className={clsx('page-contents')}>
-            <h2 className={clsx('heading heading-h2')}>MemoGo</h2>
+            <h2
+              id="memogo"
+              data-ss="memogo"
+              className={clsx('heading heading-h2')}
+            >
+              MemoGo
+            </h2>
             <div>
               <AppWindow
                 type="browser"
@@ -44,7 +76,13 @@ export default function Projects() {
               </AppWindow>
             </div>
             <hr className={clsx('divider')} />
-            <h2 className={clsx('heading heading-h2')}>Portfolio</h2>
+            <h2
+              id="portfolio"
+              data-ss="portfolio"
+              className={clsx('heading heading-h2')}
+            >
+              Portfolio
+            </h2>
             <div className={clsx('mb-8')}>
               <AppWindow
                 type="browser"

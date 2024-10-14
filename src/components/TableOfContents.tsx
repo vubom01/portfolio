@@ -3,14 +3,9 @@ import { motion } from 'framer-motion';
 
 import useOnScroll from '@/hooks/useOnScroll';
 import useScrollSpy from '@/hooks/useScrollSpy';
+import { ITableOfContentsItem } from '@/interfaces/common';
 
-type TTableOfContentsItem = {
-  title: string;
-  depth: number;
-  slug: string;
-};
-
-interface TableOfContentsLinkProps extends TTableOfContentsItem {
+interface TableOfContentsLinkProps extends ITableOfContentsItem {
   active?: boolean;
 }
 
@@ -34,7 +29,7 @@ function TableOfContentsLink({
 }
 
 interface TableOfContentsProps {
-  items: Array<TTableOfContentsItem>;
+  items: Array<ITableOfContentsItem>;
 }
 
 function TableOfContents({ items = [] }: TableOfContentsProps) {
