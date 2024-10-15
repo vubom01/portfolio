@@ -45,6 +45,8 @@ export default function Projects() {
             </div>
           </div>
           <div className={clsx('page-contents')}>
+            <p>Click on the tab to open the project and access its details.</p>
+            <hr className={clsx('divider')} />
             <h2
               id="memogo"
               data-ss="memogo"
