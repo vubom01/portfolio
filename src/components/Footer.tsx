@@ -193,6 +193,12 @@ export default function Footer() {
                   links={[
                     { title: 'Projects', href: '/projects' },
                     { title: 'Contact', href: '/contact' },
+                    { title: 'Experience', href: '/experience' },
+                  ]}
+                />
+                <FooterGroup
+                  title="Sharing"
+                  links={[
                     { title: 'Studio', href: '/studio' },
                   ]}
                 />
