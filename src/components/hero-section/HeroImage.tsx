@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { basePath } from '@/config';
 
 function HeroImage() {
   return (
@@ -28,7 +27,7 @@ function HeroImage() {
           >
             <Image
               alt="tethiendaivu"
-              src={`${basePath}/assets/images/avatar.png`}
+              src="/assets/images/avatar.png"
               width={457}
               height={526}
               className={clsx(' max-w-none', 'dark:brightness-[.82]')}
