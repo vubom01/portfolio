@@ -2,6 +2,7 @@ import clsx from 'clsx';
 
 import { SkeletonSm } from '@/components/wireframes/Skeletons';
 import Image from 'next/image';
+import { basePath } from '@/config';
 
 function MemoGoWireframe() {
   return (
@@ -30,7 +31,7 @@ function MemoGoWireframe() {
         <div className={clsx('hidden lg:block')}>
           <Image
             alt="memogo bg"
-            src="/assets/images/memogo-home-background.png"
+            src={`${basePath}/assets/images/memogo-home-background.png`}
             width={200}
             height={200}
           />

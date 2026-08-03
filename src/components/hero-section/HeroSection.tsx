@@ -7,6 +7,7 @@ import HeroImage from '@/components/hero-section/HeroImage';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import React from 'react';
+import { basePath } from '@/config';
 
 const HeroSection = () => {
   return (
@@ -34,7 +35,7 @@ const HeroSection = () => {
             >
               <Image
                 alt="tethiendaivu"
-                src="/assets/images/avatar.png"
+                src={`${basePath}/assets/images/avatar.png`}
                 width={325}
                 height={526}
                 className={clsx(' max-w-none', 'dark:brightness-[.82]')}

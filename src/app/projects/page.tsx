@@ -9,6 +9,7 @@ import { GitHubIcon } from '@/components/icons/Icons';
 import { GITHUB_REPO_LINK, MEMOGO_LINK } from '@/constants/socials';
 import { ITableOfContentsItem } from '@/interfaces/common';
 import TableOfContents from '@/components/TableOfContents';
+import { basePath } from '@/config';
 
 export default function Projects() {
   const tableOfContents: ITableOfContentsItem[] = [
@@ -62,7 +63,7 @@ export default function Projects() {
                     icon: (
                       <Image
                         alt="memogo logo"
-                        src="/assets/images/memogo-favicon.png"
+                        src={`${basePath}/assets/images/memogo-favicon.png`}
                         width={16}
                         height={16}
                       />

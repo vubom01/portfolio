@@ -6,12 +6,13 @@ import { Inter } from 'next/font/google';
 import React from 'react';
 import '@/styles/main.css';
 import Footer from '@/components/Footer';
+import { basePath } from '@/config';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'tethiendaivu',
-  icons: '/assets/favicon.png',
+  icons: `${basePath}/assets/favicon.png`,
 };
 
 export default async function RootLayout({

@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { motion, useAnimationControls } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { basePath } from '@/config';
 
 const animation = {
   hide: { x: -32, opacity: 0 },
@@ -48,7 +49,7 @@ function HeroTitle() {
           <Image
             className={clsx('w-7 md:w-10')}
             alt="Love-you Gesture"
-            src="/assets/emojis/love-you-gesture.png"
+            src={`${basePath}/assets/emojis/love-you-gesture.png`}
             width={48}
             height={48}
             onLoad={() => {
