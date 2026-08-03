@@ -1,11 +1,14 @@
-const basePath = '/portfolio';
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
+const basePath = isGithubPages ? '/portfolio' : '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: { unoptimized: true },
-  basePath,
-  assetPrefix: basePath,
+  ...(isGithubPages && {
+    output: 'export',
+    basePath,
+    assetPrefix: basePath,
+  }),
+  images: { unoptimized: isGithubPages }, // Vercel vẫn dùng Image Optimization bình thường
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
