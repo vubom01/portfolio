@@ -1,18 +1,18 @@
+'use client';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from 'next-themes';
 import { PropsWithChildren } from 'react';
+import { defaultLocale } from '@/config';
+import messages from '@messages/en.json';
 
-export default async function Provider({ children }: PropsWithChildren) {
-  const messages = await getMessages();
-
+export default function Provider({ children }: PropsWithChildren) {
   return (
     <ThemeProvider
       attribute="class"
       disableTransitionOnChange
       defaultTheme="light"
     >
-      <NextIntlClientProvider messages={messages}>
+      <NextIntlClientProvider locale={defaultLocale} messages={messages}>
         {children}
       </NextIntlClientProvider>
     </ThemeProvider>
