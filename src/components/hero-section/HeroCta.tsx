@@ -1,3 +1,5 @@
+'use client'
+
 import { DocumentIcon } from '@/components/icons/Icons';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';

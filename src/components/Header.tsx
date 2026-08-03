@@ -1,4 +1,5 @@
 'use client';
+
 import Logo from '@/components/Logo';
 import NavLink from '@/components/navigation/NavLink';
 import ThemeToggle from '@/components/ThemeToggle';
