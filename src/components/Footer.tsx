@@ -184,7 +184,7 @@ export default function Footer() {
               className={clsx(
                 '-mx-2 flex flex-1 flex-col gap-8',
                 'sm:flex-row sm:gap-16 lg:mx-0',
-                'justify-end'
+                'justify-start lg:justify-end'
               )}
             >
               <div className={clsx('flex', 'sm:gap-16')}>

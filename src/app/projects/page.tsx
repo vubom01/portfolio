@@ -91,14 +91,14 @@ export default function Projects() {
                 browserTabs={[
                   {
                     icon: <GitHubIcon className="h-4 w-4" />,
-                    title: 'vubom01/portfolio',
+                    title: 'tethiendaivu/portfolio',
                     isActive: true,
                     url: GITHUB_REPO_LINK,
                   },
                 ]}
               >
                 <GitHubWireframe
-                  author="vubom01"
+                  author="tethiendaivu"
                   repository="portfolio"
                   description="This portfolio design is inspired by various online sources. The source code is free to use and is not intended for commercial purposes."
                 />

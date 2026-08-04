@@ -1,8 +1,13 @@
 import clsx from 'clsx';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, useAnimationControls } from 'framer-motion';
+
+import HeroImageOutline from './HeroImageOutline';
 
 function HeroImage() {
+  const controlsImage = useAnimationControls();
+  const controlsOutline = useAnimationControls();
+
   return (
     <div
       className={clsx('relative h-[590px] w-[603px]')}
@@ -17,19 +22,36 @@ function HeroImage() {
           'dark:from-accent-600/10 dark:via-accent-600/0'
         )}
       >
-        <div className={clsx('relative right-10 top-[105px]')}>
+        <div
+          className={clsx(
+            'relative right-10 top-[105px] overflow-hidden'
+          )}
+        >
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: 1,
-              transition: { delay: 0.5, duration: 0.4, ease: 'easeIn' },
-            }}
+            className={clsx('absolute inset-0 z-10')}
+            initial={{ opacity: 1 }}
+            animate={controlsOutline}
           >
+            <HeroImageOutline
+              onAnimationComplete={() => {
+                controlsOutline.start({
+                  opacity: 0,
+                  transition: { duration: 0.2, delay: 0.15 },
+                });
+
+                controlsImage.start({
+                  opacity: 1,
+                  transition: { duration: 0.15 },
+                });
+              }}
+            />
+          </motion.div>
+          <motion.div initial={{ opacity: 0 }} animate={controlsImage}>
             <Image
               alt="tethiendaivu"
               src="/assets/images/avatar.png"
               width={457}
-              height={526}
+              height={485}
               className={clsx(' max-w-none', 'dark:brightness-[.82]')}
               quality={100}
               priority

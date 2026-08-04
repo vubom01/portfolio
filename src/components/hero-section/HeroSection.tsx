@@ -4,8 +4,6 @@ import HeroTitle from '@/components/hero-section/HeroTitle';
 import HeroSocials from '@/components/hero-section/HeroSocials';
 import clsx from 'clsx';
 import HeroImage from '@/components/hero-section/HeroImage';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
 import React from 'react';
 
 const HeroSection = () => {
@@ -20,29 +18,6 @@ const HeroSection = () => {
     >
       <div className={clsx('content-wrapper')}>
         <div className={clsx('relative')}>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: 1,
-              transition: { duration: 0.4, ease: 'easeIn' },
-            }}
-          >
-            <div
-              className={clsx(
-                'block lg:hidden w-fit mb-10 bottom-[20px] ml-auto mr-auto'
-              )}
-            >
-              <Image
-                alt="tethiendaivu"
-                src="/assets/images/avatar.png"
-                width={325}
-                height={526}
-                className={clsx(' max-w-none', 'dark:brightness-[.82]')}
-                quality={100}
-                priority
-              />
-            </div>
-          </motion.div>
           <div className={clsx('order-2 xl:order-none')}>
             <div className={clsx('relative z-10')}>
               <HeroTitle />
